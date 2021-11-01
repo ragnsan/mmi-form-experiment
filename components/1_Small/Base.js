@@ -25,7 +25,7 @@ export const Bilde = ({ src, alt, w, h, c, layout, of, op, id }) => {
 // ! Containers and sections
 // !
 export const Section = ({ children, id, farge, pt }) => {
-  const klassenavn = `bg-${farge} mx-auto align-center pb-56 md:pb-96 lg:pb-160 `;
+  const klassenavn = `bg-${farge} mx-auto align-center py-80 `;
   return (
     <section id={id} className={klassenavn}>
       {children}
@@ -174,7 +174,7 @@ export const TwoTwoThree = ({ c, children, id }) => {
 
 export const TwoFourThree = ({ c, children, id }) => {
   return (
-    <div key={id} className={`${c} col-span-2 md:col-span-4 lg:col-span-2`}>
+    <div key={id} className={`${c} col-span-2 md:col-span-4 lg:col-span-3`}>
       {children}
     </div>
   );

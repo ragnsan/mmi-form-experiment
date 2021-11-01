@@ -11,14 +11,14 @@ module.exports = {
       h4: ["20px", { lineHeight: "40px" }],
       body_large: ["21px", { lineHeight: "32px" }],
       body_regular: ["16px", { lineHeight: "32px" }],
-      body_medium: ["14px", { lineHeight: "" }],
+      body_medium: ["14px", { lineHeight: "24px" }],
       body_small: ["10px", { lineHeight: "10px" }],
     },
     //
     // TODO Set the font families according to the design spec. For example:
     // sans: ["Poppins", "sans-serif"], for example
     fontFamily: {
-      sans: [],
+      sans: ["Roboto", "sans-serif"],
     },
     //
     // TODO Configure the colors that do not have a hexcode already. Add all colors from the "color palette" section in the design
@@ -26,7 +26,7 @@ module.exports = {
       primary_50: "#F8FAFC",
       primary_300: "#F1F5F9",
       primary_500: "#E2E8F0",
-      primary_700: "#008396",
+      primary_700: "#6673FF",
       primary_900: "#006E7E",
       secondary_50: "#",
       secondary_300: "#",
@@ -55,7 +55,7 @@ module.exports = {
     // TODO Set the border radius for buttons
     borderRadius: {
       circle: "9999px",
-      rund: "24px",
+      rund: "4px",
     },
     //
     //

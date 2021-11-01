@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 // TODO: Primary button that you use in the project
-const PrimaryButtonStyling = `justify-center bg-cta border-2 border-cta text-hvit font-semibold p-16 primaryButton flex w-0100 md:w-auto rounded-rund`;
+const PrimaryButtonStyling = `text-center bg-primary_700 text-white font-bold px-16 py-8 rounded-rund text-body_medium transition hover:bg-primary_900`;
 export const PrimaryButtonHref = ({ text, href, iconLeft, iconRight }) => {
   return (
     <Link href={href}>
@@ -27,7 +27,7 @@ export const SecondaryButtonHref = ({ text, href, farge }) => {
   return (
     <Link href={href}>
       <a
-        className={`justify-center text-${farge} border-2 border-${farge} font-semibold p-16 secondaryButton flex w-0100 md:w-auto rounded-rund`}
+        className={`text-center font-bold px-16 py-8 bg-neutral_300 text-neutral_700 rounded-rund text-body_medium mr-16 transition hover:bg-neutral_500 hover:text-white`}
       >
         {text}
       </a>

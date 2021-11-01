@@ -1,21 +1,15 @@
-export const InputGroup = ({ name, labelTxt, type, required, iconLeft }) => {
+export const InputGroup = ({ name, lblText }) => {
   return (
-    <div className="relative z-0 w-100 mb-8">
+    <div className="flex flex-col mb-8">
+      <label className="text-body_regular text-neutral_700 mb-4" htmlFor={name}>
+        {lblText}
+      </label>
       <input
-        required={required != null ? true : null}
-        type={type}
+        type="text"
         name={name}
         id={name}
-        placeholder=" "
-        className="pb-2 pt-4 block w-100 px-0 mt-0 border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-neutral_900 border-neutral_300 bg-transparent floatingInput"
+        className="w-100 border-1 border-neutral_300 border-b border-l border-r border-t rounded-rund py-4 pl-8"
       />
-      <label
-        htmlFor={name}
-        className="absolute duration-300 top-0  origin-0 text-neutral_700 cursor-text"
-      >
-        {iconLeft != null ? <span className="mr-8">{iconLeft}</span> : null}
-        {labelTxt}
-      </label>
     </div>
   );
 };
