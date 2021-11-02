@@ -1,7 +1,7 @@
 import { FourEightTwelve } from "../Base";
 import { LichertRow } from "./LichertRow";
 import { HeadingGroup } from "../../2_Big/Header";
-export const HvaSynsOm = () => {
+export const HvaSynsOmAlt = () => {
   return (
     <>
       <FourEightTwelve>
@@ -11,7 +11,7 @@ export const HvaSynsOm = () => {
         />
 
         <LichertRow
-          legend="Din barneskolegang"
+          legend="Videregående skole"
           name="barneskolegang"
           value1="Veldig dårlig"
           value2="Litt dårlig"
@@ -20,7 +20,7 @@ export const HvaSynsOm = () => {
           value5="Veldig godt"
         />
         <LichertRow
-          legend="Joe Biden"
+          legend="Donald Trumd"
           name="joe-biden"
           value1="Veldig dårlig"
           value2="Litt dårlig"
@@ -29,7 +29,7 @@ export const HvaSynsOm = () => {
           value5="Veldig godt"
         />
         <LichertRow
-          legend="Regjeringens ledelse under koronapandemien"
+          legend="Mengden nedstengninger under koronapandemien"
           name="regjering-korona"
           value1="Veldig dårlig"
           value2="Litt dårlig"
@@ -38,7 +38,7 @@ export const HvaSynsOm = () => {
           value5="Veldig godt"
         />
         <LichertRow
-          legend="Det nye munchmuseet"
+          legend="Operabygget"
           name="munch"
           value1="Veldig dårlig"
           value2="Litt dårlig"

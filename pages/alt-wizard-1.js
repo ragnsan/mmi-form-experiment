@@ -10,7 +10,6 @@ import {
 } from "../components/1_Small/Buttons";
 import { FadeContainer } from "../components/1_Small/FadeContainer";
 import { HvaVilDuBli } from "../components/1_Small/Forms/HvaVilDuBli";
-import { HvaVilDuBliAlt } from "../components/1_Small/Forms/HvaVilDuBliAlt";
 import { Personalia } from "../components/1_Small/Forms/Personalia";
 import { WizardHeader } from "../components/1_Small/Forms/WizardHeader";
 
@@ -44,11 +43,11 @@ export default function wizardStart() {
             />
             <FourEightEight c="lg:col-start-3 py-56">
               <Grid>
-                <HvaVilDuBliAlt />
+                <HvaVilDuBli />
               </Grid>
               <div className="flex mt-32">
-                <SecondaryButtonHref href="/wizard-start" text="Forrige" />
-                <PrimaryButtonHref href="/wizard-2" text="Neste" />
+                <SecondaryButtonHref href="/alt-wizard-start" text="Forrige" />
+                <PrimaryButtonHref href="/alt-wizard-2" text="Neste" />
               </div>
             </FourEightEight>
           </Grid>

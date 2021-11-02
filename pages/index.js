@@ -30,7 +30,17 @@ export default function Home() {
     <>
       <Layout>
         <Section>
-          <Grid>test</Grid>
+          <div className="flex flex-col items-center">
+            <PrimaryButtonHref
+              href="/long-form"
+              text="Long form - Wizard form"
+            />
+            <div className="my-8" />
+            <PrimaryButtonHref
+              href="/alt-wizard-start"
+              text="Wizard form - Long form"
+            />
+          </div>
         </Section>
       </Layout>
     </>

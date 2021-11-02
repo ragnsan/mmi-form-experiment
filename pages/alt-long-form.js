@@ -1,29 +1,20 @@
 import {
   FourEightEight,
-  FourEightTwelve,
-  FourFourFour,
-  FourFourSix,
   Grid,
   Layout,
   Section,
-  TwoFourThree,
 } from "../components/1_Small/Base";
+import { PersonaliaAlt } from "../components/1_Small/Forms/PersonaliaAlt";
+import { UnderholdningAlt } from "../components/1_Small/Forms/UnderholdningAlt";
+import { HvaSynsOmAlt } from "../components/1_Small/Forms/HvaSynsOmAlt";
+import { HvaVilDuBliAlt } from "../components/1_Small/Forms/HvaVilDuBliAlt";
 import {
   PrimaryButtonHref,
   SecondaryButtonHref,
 } from "../components/1_Small/Buttons";
-import { HvaSynsOm } from "../components/1_Small/Forms/HvaSynsOm";
-import { Underholdning } from "../components/1_Small/Forms/Underholdning";
-import { InputGroup } from "../components/1_Small/Forms/InputGroup";
-import { LichertGroup } from "../components/1_Small/Forms/LichertGroup";
-import { LichertRow } from "../components/1_Small/Forms/LichertRow";
-import { RadioGroup } from "../components/1_Small/Forms/RadioGroup";
-import { HeadingGroup } from "../components/2_Big/Header";
-import { HvaVilDuBli } from "../components/1_Small/Forms/HvaVilDuBli";
-import { Personalia } from "../components/1_Small/Forms/Personalia";
 import { FadeContainer } from "../components/1_Small/FadeContainer";
 
-export default function longForm() {
+export default function altLongForm() {
   return (
     <FadeContainer>
       <Layout>
@@ -34,25 +25,26 @@ export default function longForm() {
                 {/* 
                 Personalia
                 */}
-                <Personalia />
+                <PersonaliaAlt />
+
                 <div className="mb-160" />
                 {/* 
                 Hva vil du bli?
                 */}
-                <HvaVilDuBli />
+                <HvaVilDuBliAlt />
                 <div className="mb-160" />
 
                 {/* 
               Underholdning
               */}
-                <Underholdning />
+                <UnderholdningAlt />
                 <div className="mb-160" />
               </Grid>
             </FourEightEight>
             {/* 
             Hva syns du om…
             */}
-            <HvaSynsOm />
+            <HvaSynsOmAlt />
           </Grid>
           <div className="flex flex-col items-center py-160 text-center">
             <h2 className="text-neutral_900 font-bold mb-8">
@@ -68,7 +60,7 @@ export default function longForm() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfIj1suRhYnACMW-8PuTw_zu7Y4E1lFIn7NOOkDjxFf5NqUqw/viewform?usp=sf_link"
                 text="Svare på spørsmål"
               />
-              <PrimaryButtonHref href="wizard-start" text="Neste skjema" />
+              <PrimaryButtonHref href="/finish" text="Neste skjema" />
             </div>
           </div>
         </Section>

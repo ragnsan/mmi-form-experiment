@@ -9,6 +9,7 @@
     "generate:sitemap": "node ./scripts/generate-sitemap.js"
   },
   "dependencies": {
+    "framer-motion": "^5.0.1",
     "hamburger-react": "^2.4.1",
     "next": "^12.0.2",
     "next-seo": "^4.24.0",
