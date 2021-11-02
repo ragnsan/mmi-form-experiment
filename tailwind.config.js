@@ -12,7 +12,7 @@ module.exports = {
       body_large: ["21px", { lineHeight: "32px" }],
       body_regular: ["16px", { lineHeight: "32px" }],
       body_medium: ["14px", { lineHeight: "24px" }],
-      body_small: ["10px", { lineHeight: "10px" }],
+      body_small: ["12px", { lineHeight: "16px" }],
     },
     //
     // TODO Set the font families according to the design spec. For example:

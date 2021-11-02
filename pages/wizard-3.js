@@ -4,6 +4,7 @@ import {
   Grid,
   Layout,
   Section,
+  OneOneOne,
 } from "../components/1_Small/Base";
 import {
   PrimaryButtonHref,
@@ -23,6 +24,7 @@ export default function wizardStart() {
       <FadeContainer>
         <Layout c="mt-32">
           <Grid>
+            <OneOneOne></OneOneOne>
             <WizardHeader
               number="1"
               name="Personalia"
@@ -43,12 +45,18 @@ export default function wizardStart() {
             />
             <WizardHeader
               number="4"
+              name="Tilfeldige spørsmål"
+              pTxt="Litt om ditt og litt om datt. Ikke noe spesielt"
+              isHere="true"
+            />
+            <WizardHeader
+              number="5"
               name="Hva syns du om…?"
-              pTxt="Her har vi noen spørsmål om hva du liker eller ikke liker. Vennligst velg en boks per spørsmål."
+              pTxt="Her har vi noen spørsmål om hva du liker eller ikke liker"
               isHere="true"
             />
             <FourEightTwelve>
-              <Grid>
+              <Grid c="mt-56">
                 <HvaSynsOmAlt />
               </Grid>
               <div className="flex mt-32">

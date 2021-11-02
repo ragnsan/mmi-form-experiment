@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { ThreeThreeThree, TwoFourTwo } from "../Base";
+import { ThreeThreeThree, TwoFourThree, TwoFourTwo } from "../Base";
 
-export const WizardHeader = ({ number, name, pTxt, isHere }) => {
+export const WizardHeaderBigger = ({ number, name, pTxt, isHere }) => {
   const dropIn = {
     hidden: {},
     visible: {
@@ -28,7 +28,7 @@ export const WizardHeader = ({ number, name, pTxt, isHere }) => {
   };
 
   return (
-    <TwoFourTwo>
+    <TwoFourThree>
       <motion.div
         className="flex flex-col items-center text-center"
         // variants={dropIn}
@@ -62,6 +62,6 @@ export const WizardHeader = ({ number, name, pTxt, isHere }) => {
           {/* {pTxt} */}
         </motion.p>
       </motion.div>
-    </TwoFourTwo>
+    </TwoFourThree>
   );
 };
