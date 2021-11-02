@@ -14,7 +14,6 @@ import { FadeContainer } from "../components/1_Small/FadeContainer";
 import { HvaSynsOm } from "../components/1_Small/Forms/HvaSynsOm";
 import { HvaVilDuBli } from "../components/1_Small/Forms/HvaVilDuBli";
 import { Personalia } from "../components/1_Small/Forms/Personalia";
-import { Tilfeldige } from "../components/1_Small/Forms/Tilfeldige";
 import { Underholdning } from "../components/1_Small/Forms/Underholdning";
 import { WizardHeader } from "../components/1_Small/Forms/WizardHeader";
 
@@ -53,17 +52,31 @@ export default function wizardStart() {
               number="5"
               name="Hva syns du om…?"
               pTxt="Her har vi noen spørsmål om hva du liker eller ikke liker"
+              isHere="true"
             />
-            <FourEightEight c="lg:col-start-3 mt-56">
-              <Tilfeldige />
-              <div className="flex">
-                <div className="flex mt-56">
-                  <SecondaryButtonHref href="/alt-wizard-2" text="Forrige" />
-                  <PrimaryButtonHref href="/alt-wizard-4" text="Neste" />
-                </div>
-              </div>
-            </FourEightEight>
+            <FourEightTwelve>
+              <Grid c="mt-56">
+                <HvaSynsOm />
+              </Grid>
+            </FourEightTwelve>
           </Grid>
+          <div className="flex flex-col items-center py-160 text-center">
+            <h2 className="text-neutral_900 font-bold mb-8">
+              Gratulerer! Du har
+              <br /> fullført dette skjemaet
+            </h2>
+            <p className="text-neutral_700 mb-16">
+              Vi ønsker nå å stille deg noen spørsmål før vi går <br /> videre
+              til neste skjema
+            </p>
+            <div className="flex">
+              <SecondaryButtonHref
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdeUnYg_K9fz5R5WnWxq7Un9Ri6eSZ1Y2ZIjTrdDgHPGKUfxw/viewform?usp=sf_link"
+                text="Svare på spørsmål"
+              />
+              <PrimaryButtonHref href="/alt-long-form" text="Neste skjema" />
+            </div>
+          </div>
         </Layout>
       </FadeContainer>
     </>
