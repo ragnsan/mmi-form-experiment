@@ -1,9 +1,9 @@
-import { FourEightTwelve } from "../Base";
+import { FourEightTwelve, Grid } from "../Base";
 import { LichertRow } from "./LichertRow";
 import { HeadingGroup } from "../../2_Big/Header";
 export const HvaSynsOmAlt = () => {
   return (
-    <>
+    <Grid>
       <FourEightTwelve>
         <HeadingGroup
           headingTxt="Hvordan liker du…"
@@ -47,6 +47,6 @@ export const HvaSynsOmAlt = () => {
           value5="Veldig godt"
         />
       </FourEightTwelve>
-    </>
+    </Grid>
   );
 };

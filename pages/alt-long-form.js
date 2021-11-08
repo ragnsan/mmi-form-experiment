@@ -1,5 +1,6 @@
 import {
   FourEightEight,
+  FourEightTwelve,
   Grid,
   Layout,
   Section,
@@ -13,6 +14,7 @@ import {
   SecondaryButtonHref,
 } from "../components/1_Small/Buttons";
 import { FadeContainer } from "../components/1_Small/FadeContainer";
+import { WizardHeader } from "../components/1_Small/Forms/WizardHeader";
 
 export default function altLongForm() {
   return (
@@ -20,31 +22,60 @@ export default function altLongForm() {
       <Layout>
         <Section>
           <Grid>
-            <FourEightEight c="lg:col-start-3">
+            <FourEightTwelve>
               <Grid>
                 {/* 
                 Personalia
                 */}
-                <PersonaliaAlt />
+                <WizardHeader
+                  number="1"
+                  name="Personalia"
+                  pTxt="Noen generelle spørsmål for å finne litt ut om hvem du er!"
+                  isHere="true"
+                />
+                <FourEightEight c="lg:col-start-4 mb-160">
+                  <PersonaliaAlt />
+                </FourEightEight>
 
-                <div className="mb-160" />
                 {/* 
                 Hva vil du bli?
                 */}
-                <HvaVilDuBliAlt />
-                <div className="mb-160" />
+                <WizardHeader
+                  number="2"
+                  name="Hva vil du bli?"
+                  pTxt="Noen tilfeldige spørsmål om karriere og inntekt"
+                  isHere="true"
+                />
+                <FourEightEight c="lg:col-start-4 mb-160">
+                  <HvaVilDuBliAlt />
+                </FourEightEight>
 
                 {/* 
               Underholdning
               */}
-                <UnderholdningAlt />
-                <div className="mb-160" />
+                <WizardHeader
+                  number="3"
+                  name="Underholdning"
+                  pTxt="Her ønsker vi å høre om hva du liker å se og høre på"
+                  isHere="true"
+                />
+                <FourEightEight c="lg:col-start-4 mb-160">
+                  <UnderholdningAlt />
+                </FourEightEight>
+                <WizardHeader
+                  number="4"
+                  name="Tilfeldige spørsmål"
+                  pTxt="Litt om ditt og litt om datt. Ikke noe spesielt"
+                  isHere="true"
+                />
+                <FourEightEight c="lg:col-start-4 mb-160">
+                  <HvaSynsOmAlt />
+                </FourEightEight>
               </Grid>
-            </FourEightEight>
+            </FourEightTwelve>
             {/* 
             Hva syns du om…
             */}
-            <HvaSynsOmAlt />
           </Grid>
           <div className="flex flex-col items-center py-160 text-center">
             <h2 className="text-neutral_900 font-bold mb-8">

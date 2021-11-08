@@ -1,10 +1,10 @@
 import { HeadingGroup } from "../../2_Big/Header";
-import { FourEightTwelve, FourFourFour, FourFourSix } from "../Base";
+import { FourEightTwelve, FourFourFour, FourFourSix, Grid } from "../Base";
 import { InputGroup } from "./InputGroup";
 
 export const PersonaliaAlt = () => {
   return (
-    <>
+    <Grid>
       <FourEightTwelve>
         <HeadingGroup
           headingTxt="Personalia"
@@ -26,6 +26,6 @@ export const PersonaliaAlt = () => {
           lblText="Hvor vil du bo når du blir gammel?"
         />
       </FourFourSix>
-    </>
+    </Grid>
   );
 };

@@ -1,11 +1,11 @@
 import { HeadingGroup } from "../../2_Big/Header";
-import { FourEightTwelve, FourFourFour, FourFourSix } from "../Base";
+import { FourEightTwelve, FourFourFour, FourFourSix, Grid } from "../Base";
 import { InputGroup } from "./InputGroup";
 import { RadioGroup } from "./RadioGroup";
 
 export const HvaVilDuBliAlt = () => {
   return (
-    <>
+    <Grid>
       <FourEightTwelve>
         <HeadingGroup
           headingTxt="Hva vil du bli?"
@@ -58,6 +58,6 @@ export const HvaVilDuBliAlt = () => {
       <FourFourFour c="">
         <RadioGroup name="skatt" lblText="40%+" />
       </FourFourFour>
-    </>
+    </Grid>
   );
 };

@@ -10,7 +10,7 @@ import { RadioGroup } from "./RadioGroup";
 import { HeadingGroup } from "../../2_Big/Header";
 export const UnderholdningAlt = () => {
   return (
-    <>
+    <Grid>
       <FourEightTwelve>
         <HeadingGroup
           headingTxt="Underholdning"
@@ -47,6 +47,6 @@ export const UnderholdningAlt = () => {
       <TwoFourThree c="">
         <RadioGroup name="ode-oy" lblText="Albert Einstein" />
       </TwoFourThree>
-    </>
+    </Grid>
   );
 };

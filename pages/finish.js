@@ -13,8 +13,8 @@ export default function wizardFinish() {
           <br /> Bare ett spørsmål til
         </h2>
         <p className="text-neutral_700 mb-16">
-          Av de to skjemaene du nettopp har fullført; <br /> hvilket likte du
-          best?
+          Av de to skjemaene du nettopp har fullført; <br /> foretrekker du det
+          ene over det andre? Hvis ja, hvilket?
         </p>
       </div>
     </Layout>
